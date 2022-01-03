@@ -1,25 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Countries from "./components/Countries";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bg-blue-100">
+        <header className="text-3xl text-center font-bold pt-6">Countries</header>
+        <div className="flex justify-center pb-2">
+          <div className="flex flex-col">
+            <div className="flex-grow">
+              <div className="m-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-8">
+                <Countries />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
